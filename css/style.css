@@ -1,6 +1,6 @@
 /* || GENERAL STLES */
 body {
-    
+    text-align: center;
 }
 
 h2 {
@@ -55,6 +55,11 @@ h3 {
 
 .cards p {
     padding: 0 20px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
 }
 
 /* || TYPOGRAPHY */

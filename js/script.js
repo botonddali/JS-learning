@@ -7,3 +7,10 @@ function revealMessage(){
     revealbutton.style.display = "none";
   }
 }
+
+// ez sotet modra allit mindent
+
+function darkMode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
