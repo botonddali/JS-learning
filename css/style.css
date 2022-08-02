@@ -1,6 +1,8 @@
 /* || GENERAL STLES */
 body {
     text-align: center;
+     position: relative;
+        height: 100%;
 }
 
 h2 {
@@ -34,11 +36,33 @@ h3 {
     transform: scale(1.1);
     transition: transform 330ms ease-in-out;
 }
-
+/* ---  Swiper design --- */
 #carousel {
     display:none;
     margin: 20px;
 }
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+.swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+
+.swiper-slide img {
+        display: block;
+        width: 100%;
+      }
 
 .cards {
     width: 30%;
@@ -60,6 +84,20 @@ h3 {
 .dark-mode {
   background-color: black;
   color: white;
+}
+        
+
+/* how I did */
+.behindscenes {
+    margin: 50px;
+}
+#howidid {
+    margin: 50px;
+    padding:50px;
+    display: none ;
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 0 0 10px black;
 }
 
 /* || TYPOGRAPHY */

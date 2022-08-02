@@ -6,42 +6,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <section class="mainsection">
         <h2>Hello! <br>
             Click the button below to see the carousel</h2>
         <button type="button" class="button" onclick="revealMessage()">Click me</button>
-        <div id="carousel">
-            <div class="cards">
-                <img src="../images/images (1).jpg" alt="Man coding">
-                <h3>Coding is poetry</h3>
-                <p>Don't loose your motivation!It's an art to code.</p>
-            </div>
-            <div class="cards">
-                <img src="images/images (2).jpg" alt="Coffee and code">
-                <h3>Find useful projects</h3>
-                <p>The idea matters. Search for topics you would like to show</p>
-            </div>
-            <div class="cards">
-                <img src="images/images (3).jpg" alt="Dark outside">
-                <h3>I like card designs</h3>
-                <p>Hoepfully this will be a nice card carousel</p>
-            </div>
-            <div class="cards">
-                <img src="images/images (4).jpg" alt="Matrix">
-                <h3>I ❤️️ carousels as well</h3>
-                <p>Swype and see more.</p>
+        <div class="swiper mySwiper" id="carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide cards ">
+                    <img src="../images/images (1).jpg" alt="Man coding">
+                    <h3>Coding is poetry</h3>
+                    <p>Don't loose your motivation!It's an art to code.</p>
+                </div>
+                <div class="swiper-slide cards">
+                    <img src="images/images (2).jpg" alt="Coffee and code">
+                    <h3>Find useful projects</h3>
+                    <p>The idea matters. Search for topics you would like to show</p>
+                </div>
+                <div class="swiper-slide cards">
+                    <img src="images/images (3).jpg" alt="Dark outside">
+                    <h3>I like card designs</h3>
+                    <p>Hoepfully this will be a nice card carousel</p>
+                </div>
+                <div class="swiper-slide cards">
+                    <img src="images/images (4).jpg" alt="Matrix">
+                    <h3>I ❤️️ carousels as well</h3>
+                    <p>Swype and see more.</p>
+                </div>
+                <div class="swiper-slide cards ">
+                    <img src="../images/images (1).jpg" alt="Man coding">
+                    <h3>Coding is poetry</h3>
+                    <p>Don't loose your motivation!It's an art to code.</p>
+                </div>
+                <div class="swiper-slide cards">
+                    <img src="images/images (2).jpg" alt="Coffee and code">
+                    <h3>Find useful projects</h3>
+                    <p>The idea matters. Search for topics you would like to show</p>
+                </div>
+                <div class="swiper-slide cards">
+                    <img src="images/images (3).jpg" alt="Dark outside">
+                    <h3>I like card designs</h3>
+                    <p>Hoepfully this will be a nice card carousel</p>
+                </div>
+                <div class="swiper-slide cards">
+                    <img src="images/images (4).jpg" alt="Matrix">
+                    <h3>I ❤️️ carousels as well</h3>
+                    <p>Swype and see more.</p>
+                </div>
+
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
     <button class="button dark-mode" onclick="darkMode()"> Switch to Dark mode</button>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <section class="behindscenes">
+        <button type="button" class="button blue" onclick="revealHow()">How I made this?</button>
+        <div id="howidid">
+            <h2>I made this with Javascript</h2>
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png" alt="Javascript">
+        </div>
 
+    </section>
 </body>
 
 </html>
